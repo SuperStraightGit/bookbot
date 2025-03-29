@@ -17,7 +17,7 @@ def main():
     print(f"{num_words} words found in the document")
 
     print(count_characters(text))
-
+    
     # print(get_book_text(script_directory + "/books/frankenstein.txt"))
 
 main()

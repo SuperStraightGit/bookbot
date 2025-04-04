@@ -14,3 +14,13 @@ def count_characters(text):
     
     return character_dictionary
 
+def convert_to_list_of_dictionaries(dictionary):
+
+    list_of_dictionaries = []
+
+    for char, count in dictionary.items():
+        list_of_dictionaries.append({'char':char,'count':count})
+    
+    list_of_dictionaries.sort(key=lambda lod : lod['count'], reverse=True)
+
+    return list_of_dictionaries
